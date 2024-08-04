@@ -3,7 +3,7 @@ from projects.models import Project
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'pages/home.html')
 
 def project_index(request):
     projects = Project.objects.all()
